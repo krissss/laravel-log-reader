@@ -1,21 +1,21 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "kriss/laravel-log-reader",
+    "description": "This is my package laravel-log-reader",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "kriss",
+        "laravel-log-reader"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/krissss/laravel-log-reader",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "kriss",
+            "email": "462679766@qq.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^7.1"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Kriss\\LaravelLogReader\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Kriss\\LaravelLogReader\\Tests\\": "tests"
         }
     },
     "scripts": {
