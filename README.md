@@ -1,18 +1,10 @@
-# This is my package laravel-log-reader
+# Log Reader For laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/kriss/laravel-log-reader.svg?style=flat-square)](https://packagist.org/packages/krissss/laravel-log-reader)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/kriss/laravel-log-reader.svg?style=flat-square)](https://packagist.org/packages/kriss/laravel-log-reader)
 [![Tests](https://github.com/krissss/laravel-log-reader/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/krissss/laravel-log-reader/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/kriss/laravel-log-reader.svg?style=flat-square)](https://packagist.org/packages/krissss/laravel-log-reader)
+[![Total Downloads](https://img.shields.io/packagist/dt/kriss/laravel-log-reader.svg?style=flat-square)](https://packagist.org/packages/kriss/laravel-log-reader)
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-log-reader.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-log-reader)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+Wrap [php-log-reader](https://github.com/krissss/php-log-reader) for laravel use~
 
 ## Installation
 
@@ -22,18 +14,15 @@ You can install the package via composer:
 composer require kriss/laravel-log-reader
 ```
 
-## Usage
+## Publish config
 
 ```php
-$skeleton = new Kriss\LaravelLogReader();
-echo $skeleton->echoPhrase('Hello, Kriss!');
+php artisan vendor:publish --provider=Kriss\LaravelLogReader\LogReaderServiceProvider
 ```
 
-## Testing
+## See Route
 
-```bash
-composer test
-```
+visit `{YourDomain}/log-reader`
 
 ## Changelog
 
