@@ -12,4 +12,10 @@ return [
     'logPath' => storage_path('logs'),
     // tail 查看时默认读取的行大小
     'tailDefaultLine' => env('LOG_READER_TAIL_DEFAULT', 200),
+    // route
+    'route' => [
+        'prefix' => 'log-reader',
+        'namespace' => '\\Kriss\\LaravelLogReader\\Controllers',
+        'middleware' => [],
+    ],
 ];

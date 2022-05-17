@@ -22,6 +22,6 @@ class LogReaderController
 
     protected function getBaseUrl(): string
     {
-        return url('log-reader');
+        return url(config('log-reader.route.prefix'));
     }
 }
