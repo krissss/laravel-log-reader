@@ -21,9 +21,11 @@ class LogReaderServiceProvider extends ServiceProvider
             'log-reader'
         );
 
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        if (config('log-reader.route.loadWithProvider')) {
+            $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        }
 
-        $this->app->singleton('log-reader', function ($app) {
+        $this->app->singleton('log-reader', function () {
             $config = config('log-reader');
             $logPath = $config['logPath'];
             unset($config['logPath']);
