@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-log-reader` will be documented in this file.
 
+## v1.2.0 - 2025-06-13
+
+### What's Changed
+
+**Full Changelog**: https://github.com/krissss/laravel-log-reader/compare/v1.1...v1.2.0
+
 ## v1.1 - 2022-05-17
 
 ## Added
